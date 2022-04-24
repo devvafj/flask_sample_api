@@ -13,13 +13,9 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # TODO: Externalize secret key value
-app.secret_key = ''
+app.secret_key = 'vafj'
 api = Api(app)
 
-
-@app.before_first_request
-def create_tables():
-    db.create_all()
 
 jwt = JWT(app, authenticate, identify)
 
@@ -31,5 +27,4 @@ api.add_resource(ItemList, '/items')
 api.add_resource(UserRegister, '/register')
 
 if __name__ == '__main__':
-    db.init_app(app)
     app.run(port=5000)
