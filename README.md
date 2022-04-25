@@ -1,4 +1,4 @@
-# flask_sample_api
+# Flask sample api
 
 A simplest REST API created using Python + Flask with RESTful framework. 
 
@@ -17,6 +17,32 @@ This API is about stores and items available on the stores.
 - Manage stores (create, read, delete)
 - Manage items available on stores (create, read, update, delete)
 
+
+## <a name="structure"></a> Project Structure
+
+```
+root
+├── models (entities on database)
+│   ├── __init__.py          
+│   ├── item.py          
+│   ├── store.py
+│   └── user.py  
+├── resources (entities on API)
+│   ├── __init__.py          
+│   ├── item.py          
+│   ├── store.py
+│   └── user.py  
+├── .gitignore
+├── Procfile (required to deploy project on Heroku)
+├── README.md
+├── app.py (contain Flask app and Flask-RESTful Api)
+├── db.py
+├── run.py (run the app)
+├── requirements.txt (required to install on environment)
+├── runtime.txt
+├── security.py
+└── uwsgi.ini (wsgi config)
+```
 
 ## <a name="quick-start"></a>Quick Start 
 
@@ -74,7 +100,6 @@ Also available in file `requirements.txt`
 <br><br>
 
 ### Run the app in your PC:
-<br>
 
 1. In the file `app.py`:
 
@@ -98,31 +123,4 @@ app.config['DEBUG'] = True
 
 ```bash
 python app.py
-```
-
-
-## <a name="structure"></a> Project Structure
-
-```
-root
-├── models (entities on database)
-│   ├── __init__.py          
-│   ├── item.py          
-│   ├── store.py
-│   └── user.py  
-├── resources (entities on API)
-│   ├── __init__.py          
-│   ├── item.py          
-│   ├── store.py
-│   └── user.py  
-├── .gitignore
-├── Procfile (required to deploy project on Heroku)
-├── README.md
-├── app.py (contain Flask app and Flask-RESTful Api)
-├── db.py
-├── run.py (run the app)
-├── requirements.txt (required to install on environment)
-├── runtime.txt
-├── security.py
-└── uwsgi.ini (wsgi config)
 ```
