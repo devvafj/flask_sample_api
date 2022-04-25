@@ -10,14 +10,13 @@ import os
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.secret_key = 'vafj'
 
 uri = os.getenv("DATABASE_URL")
 
 if uri.startswith("postgres://"):
     uri = uri.replace("postgres://", "postgresql://", 1)
 
-# TODO: Externalize secret key value
-app.secret_key = 'vafj'
 api = Api(app)
 
 
