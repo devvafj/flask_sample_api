@@ -115,7 +115,6 @@ app.config['DEBUG'] = True
 ```
 
 2. Activate your virtual environment.
-<br>
 
 3. Execute the following command on prompt or shell:
 
