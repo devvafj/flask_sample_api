@@ -49,7 +49,6 @@ root
 ### Creates a Virtual Environment:
 
 #### 1. Install virtualenv
-<br>
 
 ```bash
 pip install virtualenv
@@ -60,7 +59,6 @@ virtualenv environment_name --python=3.9
 ```
 
 #### 2. Activate the environment
-<br>
 
 Windows:
 ```bash
@@ -97,7 +95,7 @@ pip install -r requirements.txt
 - psycopg2
 
 Also available in file `requirements.txt`
-<br><br>
+<br>
 
 ### Run the app in your PC:
 
