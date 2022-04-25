@@ -10,7 +10,6 @@ import os
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['PROPAGATE_EXCEPTIONS'] = True
 
 uri = os.getenv("DATABASE_URL")
 
