@@ -19,10 +19,8 @@ This API is about stores and items available on the stores.
 
 
 ## <a name="quick-start"></a>Quick Start 
-<br>
 
 ### Creates a Virtual Environment:
-<br>
 
 #### 1. Install virtualenv
 <br>
