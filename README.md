@@ -1,4 +1,4 @@
-# Flask sample api
+# Flask sample API
 
 A simplest REST API created using Python + Flask with RESTful framework. 
 
@@ -115,7 +115,7 @@ app.config['DEBUG'] = True
 ```
 
 2. Activate your virtual environment.
-<br><br>
+<br>
 
 3. Execute the following command on prompt or shell:
 
